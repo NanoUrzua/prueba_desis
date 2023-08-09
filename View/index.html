@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- toastr -->
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+    <!-- Personalización css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Desis</title>
+</head>
+<body>
+    <div class="container-sm">
+        <div id="alertas"></div>
+        <form>
+            <div class="row">
+                <div class="col-12">
+                    <label for="nombre_apellido_id" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" name="nombre_apellido" id="nombre_apellido_id">
+                </div>
+                <div class="col-12">
+                    <label for="alias_id" class="form-label">Alias</label>
+                    <input type="text" class="form-control" name="alias" id="alias_id">
+                </div>
+                <div class="col-12">
+                    <label for="rut_id" class="form-label">Rut</label>
+                    <input type="text" class="form-control" name="rut" id="rut_id">
+                </div>
+                <div class="col-12">
+                    <label for="email_id" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email_id">
+                </div>
+                <div class="col-12">
+                    <label for="region_id" class="form-label">Región</label><br>
+                    <select name="region" id="region_id">
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="comuna_id" class="form-label">Comuna</label><br>
+                    <select name="comuna" id="comuna_id">
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="candidato_id" class="form-label">Candidato</label><br>
+                    <select name="candidato" id="candidato_id">
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="conjunto_rd">Como se enteró de Nosotros</label>
+                    <div id="conjunto_rd">
+                        <input class="form-check-input" type="checkbox" value="Web" name="rd_nosotros_1" id="rd_nosotros_1_id">
+                        <label class="form-check-label" for="rd_nosotros_1_id">
+                          Web
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="TV" name="rd_nosotros_2" id="rd_nosotros_2_id">
+                        <label class="form-check-label" for="rd_nosotros_2_id">
+                          TV
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="Redes Sociales" name="rd_nosotros_3" id="rd_nosotros_3_id">
+                        <label class="form-check-label" for="rd_nosotros_3_id">
+                          Redes Sociales
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="Amigo" name="rd_nosotros_4" id="rd_nosotros_4_id">
+                        <label class="form-check-label" for="rd_nosotros_4_id">
+                          Amigo
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success" type="button" id="votar_id">Votar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- toastr -->
+    <script src="plugins/toastr/toastr.min.js"></script>
+    <!-- Personalizar js -->
+    <script src="js/js.js"></script>
+</body>
+</html>

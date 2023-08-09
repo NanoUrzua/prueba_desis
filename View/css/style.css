@@ -1,0 +1,11 @@
+.container-sm{
+    margin-top: 70px !important;
+}
+
+div.col-12{
+    margin-bottom: 20px;
+}
+
+#region_id, #comuna_id, #candidato_id{
+    min-width: 150px !important;
+}
